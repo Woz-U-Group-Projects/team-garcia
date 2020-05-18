@@ -1,0 +1,21 @@
+package com.User.Controller;
+import java.util.ArrayList;
+import java.util.List;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import com.filmbuddy.models.Actor;
+
+@Controller
+@RequestMapping({ "/", "/actors" })
+public class UsersController {
+    @GetMapping()
+    public String getAllActors(Model model) {
+        List<Actor> actors = new ArrayList<Actor>();
+        // Code to query the database and
+        // add actors to the List will go here
+        model.addAttribute("actors", actors);
+        return "actors";
+    }
+}
