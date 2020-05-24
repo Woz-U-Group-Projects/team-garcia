@@ -11,14 +11,14 @@ import com.example.model.Users;
 @Controller
 @RequestMapping({ "/", "/users" })
 public class UsersController {
-    private static final Object User = null;
+    private static final Object user = null;
 
 	@GetMapping()
-    public String getAllActors(Model model) {
-        List<Users> Users = new ArrayList<Users>();
+    public String getAllUsers(Model model) {
+        List<Users> users = new ArrayList<Users>();
         // Code to query the database and
         // add actors to the List will go here
-        model.addAttribute("User", User);
+        model.addAttribute("user", user);
         return "user";
     }
 }

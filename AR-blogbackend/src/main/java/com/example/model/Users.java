@@ -3,16 +3,15 @@ package com.example.model;
 import java.sql.Timestamp;
 
 public class Users {
-    private int actor_id;
+    private int user_id;
     private String first_name;
     private String last_name;
-    private Timestamp last_update;
     
-    public int getActor_id() {
-    	return actor_id;
+    public int getUser_id() {
+    	return user_id;
     }
-    public void setActor_id(int actor_id) {
-    	this.actor_id = actor_id;
+    public void setuser_id(int user_id) {
+    	this.user_id = user_id;
     }
     public String getFirst_name() {
     	return first_name;
@@ -25,11 +24,5 @@ public class Users {
     }
     public void setLast_name(String last_name) {
     	this.last_name = last_name;
-    }
-    public Timestamp getLast_update() {
-    	return last_update;
-    }
-    public void setLast_update(Timestamp last_update) {
-    	this.last_update = last_update;
     }
 }
